@@ -1,0 +1,109 @@
+/* General styling */
+body {
+    font-family: 'Shadows Into Light', cursive; 
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    height: 100vh;
+  }
+  
+  /* Notepad container styling */
+  .notepad-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    background: linear-gradient(rgb(225, 119, 66) 98%, #d1d1d1 99%);
+    background-size: 100% 35px; /* Spacing between lines */
+    border: 2px solid #d1d1d1;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Sticky input field */
+  .sticky-input {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 10;
+    border-bottom: 2px solid #d1d1d1;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    padding-left: 40px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  
+  li.completed-item {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Completed tasks section (initially hidden) */
+  .completed-tasks-container {
+    margin-top: 20px;
+  }
+  
+  .completed-tasks-container ul {
+    display: none; /* Hidden by default */
+  }
+  
+  .completed-tasks-container ul.active {
+    display: block; /* Show when active */
+  }
+  
+  /* Add button for tasks */
+  li button {
+    padding: 5px;
+    background-color: #6f0a0a;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  li button.completed {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    border: 2px dashed #c4c4c4;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fcf8e8;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #044f12;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00b3ad;
+  }
+  
